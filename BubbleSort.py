@@ -3,11 +3,10 @@
 def BubbleSort(NumList):
     print("List of Items Before Applying Bubble Sort", NumList)
     i=0
-    j=1
-    for i in range (len(NumList)):
-        for j in range(len(NumList)):
-            if NumList[j] < NumList[i]:
-                NumList[i], NumList[j] = NumList[j], NumList[i]
+    for n in range(len(NumList)-1,0,-1):
+        for i in range (n):
+            if NumList[i] > NumList[i+1]:
+                NumList[i], NumList[i+1] = NumList[i+1], NumList[i]
     print(NumList)
 if (__name__ == "__main__"):
     NumList = [5,1,4,2,8]
