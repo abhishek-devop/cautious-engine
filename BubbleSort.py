@@ -7,7 +7,9 @@ def BubbleSort(NumList):
         for i in range (n):
             if NumList[i] > NumList[i+1]:
                 NumList[i], NumList[i+1] = NumList[i+1], NumList[i]
+            else:
+                continue
     print(NumList)
 if (__name__ == "__main__"):
-    NumList = [5,1,4,2,8]
+    NumList = [5,1,4,2,8,10,9,23,21,24]
     BubbleSort(NumList)
