@@ -1,3 +1,5 @@
+# Author : Abhishek Purbai
+# Program to find out Missing number in the natural numbers list.
 def missing(numlist):
     sumtotal= int(len(numlist)+1)*(int(len(numlist))+2)/2
     print(int(sumtotal))
